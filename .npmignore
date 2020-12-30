@@ -1,0 +1,8 @@
+/node_modules
+/src
+/tsconfig.json
+/example.js
+/logs
+/dist/**/*.js.map
+/package-lock.json
+/CHANGELOG.md
