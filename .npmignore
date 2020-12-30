@@ -6,3 +6,4 @@
 /dist/**/*.js.map
 /package-lock.json
 /CHANGELOG.md
+/**/*.jpg
