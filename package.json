@@ -1,6 +1,6 @@
 {
   "name": "koa-colorful-logger",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A middleware for koa that can log colorful request info automatically. And you can also use it as a normal logger.",
   "main": "dist/index.js",
   "types": "dist/index.d.js",

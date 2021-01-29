@@ -196,10 +196,12 @@ class Logger {
                 // 新一天
                 this._logFileStream!.end(() => {
                     this._logFileStream = fs.createWriteStream(path.join(<string>config.outputDir, n), {flags: 'a'});
+                    this._logFileStream!.write(this._getLogPrefix(level, false) + msg + '\n');
                 });
+            } else {
+                this._logFileStream!.write(this._getLogPrefix(level, false) + msg + '\n');
             }
             
-            this._logFileStream!.write(this._getLogPrefix(level, false) + msg + '\n');
         }
     }
     _getLogPrefix(level: Level, useColor?:boolean): string {
